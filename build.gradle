@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+}
+
+// current version of the project
+version 'v0.1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
+
+    implementation 'org.venatorlabs.rodeo-plugin:0.1.0'
+}
+
+compileJava {
+    doFirst {
+        println "compiling ${project.name}"
+    }
+}
+
+compileTestJava {
+    doFirst {
+        println "compiling tests ${project.name}"
+    }
+}
+
+test {
+    doFirst {
+        println "performing unit tests in in ${project.name}"
+        useJUnitPlatform()
+    }
+}
+
+tasks.withType(Test) {
+    testLogging {
+        exceptionFormat "full"
+        events "started", "skipped", "passed", "failed"
+        showStandardStreams true
+    }
+}
+
+compileJava {
+    sourceCompatibility '17'
+    targetCompatibility '17'
+}
