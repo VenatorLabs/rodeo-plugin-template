@@ -1,9 +1,9 @@
 plugins {
-    id 'java'
+    id 'java-library'
 }
 
 // current version of the project
-version 'v1.0.0'
+version '1.0.0'
 
 repositories {
     mavenCentral()
@@ -15,7 +15,7 @@ dependencies {
     if (project.hasProperty("rodeoBuild")) {
         implementation project(':core:plugin-lib')
     } else {
-        implementation 'org.venatorlabs.rodeo-plugin:0.1.0'
+        implementation 'org.venatorlabs.rodeo-plugin:1.0.0'
     }
 }
 
