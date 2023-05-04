@@ -1,2 +1,7 @@
 # rodeo-plugin
-A template repository for creating plugins for Rodeo
+
+## Purpose
+
+This is a template repository for creating plugins for the Rodeo data processing
+service. This template contains everything you need to get started writing your
+first plugin.

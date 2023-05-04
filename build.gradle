@@ -3,7 +3,7 @@ plugins {
 }
 
 // current version of the project
-version 'v0.1.0'
+version 'v1.0.0'
 
 repositories {
     mavenCentral()
@@ -12,7 +12,11 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
 
-    implementation 'org.venatorlabs.rodeo-plugin:0.1.0'
+    if (project.hasProperty("rodeoBuild")) {
+        implementation project(':core:plugin-lib')
+    } else {
+        implementation 'org.venatorlabs.rodeo-plugin:0.1.0'
+    }
 }
 
 compileJava {
@@ -28,9 +32,9 @@ compileTestJava {
 }
 
 test {
+    useJUnitPlatform()
     doFirst {
         println "performing unit tests in in ${project.name}"
-        useJUnitPlatform()
     }
 }
 
