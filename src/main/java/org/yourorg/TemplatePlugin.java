@@ -12,9 +12,9 @@ import java.util.HashMap;
  */
 public class TemplatePlugin extends RodeoPlugin {
 
-    private boolean docHook = false;
-    private boolean nodeHook = false;
-    private boolean relationshipHook = false;
+    private boolean docHook = true;
+    private boolean nodeHook = true;
+    private boolean relationshipHook = true;
 
     @Override
     public String getDescription() {
