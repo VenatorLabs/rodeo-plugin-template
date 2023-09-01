@@ -1,6 +1,6 @@
 package org.yourorg;
 
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import org.venatorlabs.rodeo.plugin.RodeoPlugin;
 import org.venatorlabs.rodeo.types.INode;
@@ -28,12 +28,12 @@ public class TemplatePlugin implements RodeoPlugin {
         // TODO: your logic here
     }
 
-    public void processNodes(ArrayList<INode> nodes) {
+    public void processNodes(List<INode> nodes) {
         System.out.println("I process nodes!");
         // TODO: your logic here
     }
 
-    public void processRelationships(ArrayList<IRelationship> rels) {
+    public void processRelationships(List<IRelationship> rels) {
         System.out.println("I process relationships!");
         // TODO: your logic here
     }
