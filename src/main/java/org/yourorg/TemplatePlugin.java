@@ -11,43 +11,42 @@ import org.venatorlabs.rodeo.types.IRelationship;
  */
 public class TemplatePlugin implements RodeoPlugin {
 
-    private boolean docHook = true;
-    private boolean nodeHook = true;
-    private boolean relationshipHook = true;
+  private boolean docHook = true;
+  private boolean nodeHook = true;
+  private boolean relationshipHook = true;
 
-    public String getDescription() {
-        return "A template plugin";
-    }
+  public String getDescription() {
+    return "A template plugin";
+  }
 
-    public String getName() {
-        return "template-plugin";
-    }
+  public String getName() {
+    return "template-plugin";
+  }
 
-    public void processDoc(Map<String, Object> doc) {
-        System.out.println("I process a document!");
-        // TODO: your logic here
-    }
+  public void processDoc(Map<String, Object> doc) {
+    System.out.println("I process a document!");
+    // TODO: your logic here
+  }
 
-    public void processNodes(List<INode> nodes) {
-        System.out.println("I process nodes!");
-        // TODO: your logic here
-    }
+  public void processNodes(List<INode> nodes) {
+    System.out.println("I process nodes!");
+    // TODO: your logic here
+  }
 
-    public void processRelationships(List<IRelationship> rels) {
-        System.out.println("I process relationships!");
-        // TODO: your logic here
-    }
+  public void processRelationships(List<IRelationship> rels) {
+    System.out.println("I process relationships!");
+    // TODO: your logic here
+  }
 
-    public boolean isDocHook() {
-        return docHook;
-    }
+  public boolean isDocHook() {
+    return docHook;
+  }
 
-    public boolean isNodeHook() {
-        return nodeHook;
-    }
+  public boolean isNodeHook() {
+    return nodeHook;
+  }
 
-    public boolean isRelationshipHook() {
-        return relationshipHook;
-    }
-
+  public boolean isRelationshipHook() {
+    return relationshipHook;
+  }
 }
