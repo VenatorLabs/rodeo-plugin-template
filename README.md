@@ -26,7 +26,7 @@ descriptive of the plugin you are developing.
 The `org/yourorg` directories underneath the `src/main/java` and `src/test/java`
 directories should be changed to match your organization name.
 
-### 4.  org.venatorlabs.rodeo.plugin.RodeoPlugin File
+### 4. `org.venatorlabs.rodeo.plugin.RodeoPlugin` File
 
 This file is located under the `src/main/resources/META-INF/service` directory
 and is incorporated into the jar file produced by the build process. Change the
