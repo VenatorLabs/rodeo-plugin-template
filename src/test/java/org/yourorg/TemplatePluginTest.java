@@ -10,9 +10,9 @@ import org.junit.jupiter.api.Test;
  */
 class TestPluginTest {
 
-  @Test
-  void shouldDoAThing() {
-    assertEquals(1, 1);
-    assertTrue(1 == 1);
-  }
+    @Test
+    void shouldDoAThing() {
+        assertEquals(1, 1);
+        assertTrue(1 == 1);
+    }
 }
